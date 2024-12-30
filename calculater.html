@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-weight: bold;
+            font-style: 2px;
+            text-align: center;
+            
+            
+        }
+        /*.container{
+            border: 4px;
+            margin: 150px 355px;
+            padding: 10px;
+            width: 800px;*
+        }*/
+        .box{
+            height: 50px;
+            width: 775px;
+            border-color:black;
+            justify-content: center;
+            align-items: center;
+        }
+        .row{
+            /*border: 3px solid blue;*/
+            margin: auto;
+            padding: 5px;
+            width: 775px;
+            height: auto;
+        }
+        .row input{
+            width: 770px;
+            height: 100px;
+            /*text-align: right;*/
+            border-radius: 5px;
+        }
+        .button{
+            width: 190px;
+            height: 30px;
+            margin: 0px;
+            align-items: left;
+        }
+        /*#box-15:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-16{
+            width: 190px;
+            height: 30px;
+            align-items: center;
+        }
+        /*#box-16:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-17{
+            inline-size: 190px;
+            height: 30px;
+            align-items: right;
+        }
+        /*#box-17:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-23{
+            width: 190px;
+            height: 30px;
+            align-items: self-end;
+        }
+        /*#box-23:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-15,.button-16,.button-17,.button-23{
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .button-12{
+            width: 190px;
+            height: 30px;
+            align-items: left;
+        }
+        /*#box-12:hover{
+            background-color: blanchedalmond;
+        }* 
+        .button-13{
+            width: 190px;
+            height: 30px;
+            align-items: center;
+        }
+        /*#box-13:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-14{
+            width: 190px;
+            height: 30px;
+        }
+        /*#box-14:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-22{
+            width: 190px;
+            height: 30px;
+            align-items: self-end;
+        }
+        /*#box-22:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-12,.button-13,.button-14,.button-22{
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .button-7{
+            width: 190px;
+            height: 30px;
+            margin: 0px;
+            align-items: left;
+        }
+        /*#box-7:hover{
+            background-color: blanchedalmond;
+        }*        .button-8{
+            width: 190px;
+            height: 30px;
+            align-items: center;
+        }
+        /*#box-8:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-9{
+            width: 190px;
+            height: 30px;
+            align-items: right;
+        }
+        /*#box-9:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-21{
+            width: 190px;
+            height: 30px;
+            align-items: self-end;
+        }
+        /*#box-21:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-7,.button-8,.button-9,.button-21{
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .button-4{
+            width: 190px;
+            height: 30px;
+            align-items: left;
+        }
+        /*#box-4:hover{
+            background-color: blanchedalmond;
+        }* 
+        .button-5{
+            width: 190px;
+            height: 30px;
+            align-items: center;
+        }
+        /*#box-5:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-6{
+            width: 190px;
+            height: 30px;
+            align-items: right;
+        }
+        /*#box-6:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-20{
+            width: 190px;
+            height: 30px;
+            align-items: self-end;
+        }
+        /*#box-20:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-6,.button-5,.button-4,.button-20{
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .button-1{
+            width: 190px;
+            height: 30px;
+            align-items: left;
+        }
+        /*#box-1:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-2{
+            width: 190px;
+            height: 30px;
+            align-items: center;
+        }
+        /*#box-2:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-3{
+            width: 190px;
+            height: 30px;
+            align-items: center;
+        }
+        /*#box-3:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-19{
+            width: 190px;
+            height: 30px;
+            align-items: right;
+        }
+        /*#button-19:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-1,.button-2,.button-3,.button-19{
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .button-0{
+            width: 190px;
+            height: 30px;
+    
+        }
+        /*#box-0:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-11{
+            width: 190px;
+            height: 30px;
+            align-items: center;
+        }
+        /*#box-11:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-18{
+            width: 190px;
+            height: 30px;
+            align-items: right;
+        }
+        /*#box-18:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-24{
+            width: 190px;
+            height: 30px;
+        }
+        /*#box-24:hover{
+            background-color: blanchedalmond;
+        }*
+        .button-0,.button-11,.button-18,.button-24{
+            display: inline-block;
+            border-radius: 5px;
+        }*/
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box" id="table-1">
+            <h4>welcome to calculate</h4>
+        </div>
+        <div class="row">
+            <input class="input" type="text" id="input" />
+        </div>
+        <div class="row">
+            <!--<button class="button-10"></button>-->
+            <button class="button"> % </button>
+            <button class="button"> CE </button>
+            <button class="button"> Check </button>
+            <button class="button"> C </button>  
+        </div>
+         <div class="row">
+              
+            <button class="button">1/x</button>
+            <button class="button" #id="demo">n^2</button>
+            <button class="button">x^n</button>
+            <button class="button">/</button>
+         </div>
+        <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">*</button>
+        </div>
+        <div  class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">-</button>
+        </div>
+        <div class="row">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">+</button>
+        </div>
+        <div class="row"> 
+            <button class="button">0</button>
+            <button class="button">00</button>
+            <button class="button">.</button>
+            <button class="button">=</button>
+        </div>
+        
+    </div>
+    <SCRIPT>
+        let string=" ";
+        let buttons = document.querySelectorAll('.button'); 
+        //a=+prompt("n : ");
+        //document.getElementById("demo").innerHTML = Math.pow(2, 2);
+        Array.from(buttons).forEach((button)=>{
+            button.addEventListener('click', (e)=>{
+                /*for(int i=1; i<=n; i++){
+                    sqroot = input ^ n;
+                    document.querySelector('input').value = string;
+                }*/
+               
+                if (e.target.innerHTML =='=') {
+                    string = eval(string);
+                    document.querySelector('input').value = string;
+                }
+                else if (e.target.innerHTML ==' C ') {
+                    string = " ";
+                    document.querySelector('input').value = string;
+                }
+                else{
+                    console.log(e.target)
+                    string = string + e.target.innerHTML;
+                    document.querySelector('input').value = string;
+                }
+            })
+        })
+        /*a=22//+prompt("Enter the First Number : ")
+        b=66//+prompt("Enter the Second Number : ")
+        operator=+//prompt("Enter the operator : ")
+        switch(operator)
+        {
+            case '+':console.log(a+b)
+            break;
+            case '-':console.log(a-b)
+            break;
+            case '*':console.log(a*b)
+            break;
+            case '/':console.log(a/b)
+            break;
+            case '%':console.log(a%b)
+            break;
+            default:console.log("Invaild Operator")
+        }*/
+    </SCRIPT>
+</body>
+</html>
